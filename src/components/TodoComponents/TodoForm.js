@@ -1,5 +1,4 @@
 import React from 'react';
-import ToDo from './Todo';
 
 class ToDoForm extends React.Component {
     constructor(props) {
@@ -32,7 +31,7 @@ class ToDoForm extends React.Component {
                     />
                     <button>Add ToDo</button>
                 </form >
-                <button>Clear Completed</button>
+                <button onClick={this.props.clearCompleted}>Clear Completed</button>
             </div>
         )
     }
